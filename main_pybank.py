@@ -55,4 +55,15 @@ print("Greatest Decrease in Profits: ", min_date,"($",int(max_decrease),")")
 #output file
 output_file = open("output_file","w")
 output_file.write("Total Months: " + str(total_months))
+output_file.write("\n")
+s1="Total: " + "$" + str(total_revenue)
+output_file.write(s1)
+output_file.write("\n")
+output_file.write("Average Change: " + "$" + str(revenue_average))
+output_file.write("\n")
+s2 = "Greatest Increase in Profits: " + max_date+ "($"+ str(max_increase)+ ")"
+output_file.write(s2)
+output_file.write("\n")
+s3 = "Greatest Decrease in Profits: "+ min_date+"($"+ str(max_decrease)+")"
+output_file.write(s3)
 output_file.close()
